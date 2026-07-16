@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imelda Damayanti — Web Developer & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Imelda Damayanti, a Computer Science student and web developer focused on software development, data, and AI. Based in Indonesia." />
+  <meta property="og:title" content="Imelda Damayanti — Web Developer & AI Enthusiast" />
+  <meta property="og:description" content="Web development, UI/UX, and AI projects by Imelda Damayanti." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://imeldamayanti.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=7" />
+</head>
+<body>
+
+  <!-- ======= INTRO LOADER (blocks drop) ======= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__cols">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="loader__text">Hi, There.</p>
+  </div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#home">Imelda<span class="accent">.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="mailto:imeldadamayantik@gmail.com">Get in touch</a>
+  </header>
+
+  <main id="home">
+
+    <!-- ======= HERO ======= -->
+    <section class="hero card-surface">
+      <div class="hero__text">
+        <h1 class="reveal">Build Better<br /><em>Faster Smarter</em></h1>
+        <p class="reveal">
+          I build clean, functional websites and explore what AI can do for
+          real people — a Computer Science student crafting web experiences
+          with purpose.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="mailto:imeldadamayantik@gmail.com">Get in touch</a>
+        </div>
+        <ul class="hero__stats reveal">
+          <li><strong><span class="count" data-target="6">0</span>+</strong><span>Projects completed</span></li>
+          <li><strong><span class="count" data-target="2">0</span></strong><span>Internships</span></li>
+          <li><strong><span class="count" data-target="15">0</span>+</strong><span>Students mentored</span></li>
+        </ul>
+      </div>
+      <figure class="hero__photo reveal">
+        <img src="assets/images/portrait.jpg" alt="Portrait of Imelda Damayanti"
+             onerror="this.closest('figure').classList.add('no-img')" />
+        <span class="hero__photo-fallback" aria-hidden="true">[ add assets/images/portrait.jpg ]</span>
+        <aside class="hero__badge">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <strong>Available for work</strong>
+            <span>Internships &amp; junior roles — I reply fast.</span>
+          </div>
+        </aside>
+      </figure>
+    </section>
+
+    <!-- ======= TECH MARQUEE ======= -->
+    <div class="logos" aria-label="Technologies I work with">
+      <div class="logos__track">
+        <span>✱ Python</span><span>◆ JavaScript</span><span>⬡ Figma</span><span>✦ WordPress</span><span>◮ SQL</span><span>✹ Streamlit</span><span>❖ Git</span><span>▲ HTML/CSS</span>
+        <span aria-hidden="true">✱ Python</span><span aria-hidden="true">◆ JavaScript</span><span aria-hidden="true">⬡ Figma</span><span aria-hidden="true">✦ WordPress</span><span aria-hidden="true">◮ SQL</span><span aria-hidden="true">✹ Streamlit</span><span aria-hidden="true">❖ Git</span><span aria-hidden="true">▲ HTML/CSS</span>
+      </div>
+    </div>
+
+    <!-- ======= BENEFITS ======= -->
+    <section class="section" id="about">
+      <p class="label reveal">Why me</p>
+      <h2 class="reveal">Discover what I <em>bring</em></h2>
+      <p class="section__sub reveal">
+        Clean, responsive builds that communicate clearly, guide visitors
+        smoothly, and support real goals.
+      </p>
+      <div class="cards-3">
+        <article class="card reveal">
+          <span class="card__glyph" aria-hidden="true">{ }</span>
+          <h3>Clean, scalable code</h3>
+          <p>Readable front-ends with structure that holds up — from WordPress builds to hand-written HTML/CSS/JS.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__glyph" aria-hidden="true">▲</span>
+          <h3>Built to perform</h3>
+          <p>Fast-loading, responsive, SEO-aware pages. Attention to detail from layout grid to lighthouse score.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__glyph" aria-hidden="true">◎</span>
+          <h3>AI-ready thinking</h3>
+          <p>Computer-vision research experience and ML curiosity — I connect web products with what AI can actually do.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= PROJECTS ======= -->
+    <section class="section" id="projects">
+      <p class="label reveal">Selected work</p>
+      <h2 class="reveal">Projects with <em>clarity</em></h2>
+      <p class="section__sub reveal">
+        A curated collection of web, AI, and design work.
+      </p>
+      <div class="grid-2">
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#20301f" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><img src="assets/images/budgetinaja.jpg" alt="Budget-in Aja homepage" loading="lazy" /><span class="proj__title-hover">Budget-in Aja</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>Budget-in Aja</h3><span class="label">Website</span></div>
+        </article>
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#1c2a33" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><span>Waveline</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>Waveline</h3><span class="label">Website</span></div>
+        </article>
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#33251c" href="https://hands4math.streamlit.app/" target="_blank" rel="noopener"><span>Hands4Math</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>Hands4Math</h3><span class="label">Website · AI</span></div>
+        </article>
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#2b1c33" href="https://drive.google.com/file/d/1HwaXAAY8iuQWKKm7p7YE5BF4egB1NFR5/view?usp=sharing" target="_blank" rel="noopener"><span>Gemas</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>Gemas</h3><span class="label">UI Design</span></div>
+        </article>
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#33301c" href="https://www.instagram.com/p/C50JKsIyBN_/?img_index=2" target="_blank" rel="noopener"><span>U-Productive</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>U-Productive</h3><span class="label">UI Design</span></div>
+        </article>
+        <article class="proj reveal">
+          <a class="proj__media" style="--tint:#1c3327" href="https://drive.google.com/file/d/1pflWEJiDpWsCpqrIfa3rFi1os63ERT6Z/view?usp=sharing" target="_blank" rel="noopener"><span>Marketing &amp; Design</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__meta"><h3>Marketing &amp; Design</h3><span class="label">Branding</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= EXPERIENCE (timeline) ======= -->
+    <section class="section section--timeline" id="experience">
+      <div class="timeline__intro">
+        <p class="label reveal">Experience</p>
+        <h2 class="reveal">Where I've <em>worked</em></h2>
+        <p class="section__sub reveal">
+          Experience across companies with very different backgrounds —
+          telecom systems, web agencies, and academic research. Every stop
+          taught me a new way to build.
+        </p>
+      </div>
+      <ol class="timeline">
+        <div class="timeline__progress" aria-hidden="true"></div>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">◮</span>
+          <div class="timeline__card">
+            <h3>PT Smartfren Telecom Tbk</h3>
+            <p class="timeline__role">System Analyst &amp; Operational Support Intern</p>
+            <p>Technical support for financial systems across operational teams — troubleshooting, smooth functionality, and data management with HeidiSQL and SQLyog.</p>
+            <span class="label">JUN – SEP 2024</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">◎</span>
+          <div class="timeline__card">
+            <h3>Telkom University — AI &amp; Informatics Lab</h3>
+            <p class="timeline__role">Lab Assistant · Computer-Vision Research</p>
+            <p>Weekly hands-on coding sessions for 15+ students; research on computer vision in social media at the Artificial Intelligence Lab.</p>
+            <span class="label">2022 – PRESENT · B.SC. EXPECTED APR 2026</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">✦</span>
+          <div class="timeline__card">
+            <h3>PT Asia E-Services</h3>
+            <p class="timeline__role">WordPress Developer</p>
+            <p>Planned, created, and designed websites with WordPress and Figma; collaborated with design teams on scalable, reusable front-end templates.</p>
+            <span class="label">SEP 2021 – JAN 2022</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">❖</span>
+          <div class="timeline__card">
+            <h3>Telkom Vocational School</h3>
+            <p class="timeline__role">Software Engineering</p>
+            <p>Graduated 2nd parallel student; LSP Web Development certification; Head of the Regeneration Division.</p>
+            <span class="label">AUG 2022</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======= SERVICES ======= -->
+    <section class="section" id="services">
+      <p class="label reveal">Services</p>
+      <h2 class="reveal">What I <em>do</em></h2>
+      <p class="section__sub reveal">
+        A focused mix of development, design, and data to turn ideas into
+        working products.
+      </p>
+      <div class="cards-3">
+        <article class="card reveal">
+          <span class="label">01</span>
+          <h3>Web Development</h3>
+          <p>Responsive, polished websites with clean structure, smooth interactions, and launch-ready execution.</p>
+        </article>
+        <article class="card reveal">
+          <span class="label">02</span>
+          <h3>UI/UX Design</h3>
+          <p>Intuitive interfaces and user flows in Figma that make digital products feel simple and refined.</p>
+        </article>
+        <article class="card reveal">
+          <span class="label">03</span>
+          <h3>AI &amp; Data</h3>
+          <p>Data processing and applied machine learning — from computer-vision research to practical AI features.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= PROCESS ======= -->
+    <section class="section">
+      <p class="label reveal">Process</p>
+      <h2 class="reveal">How the work <em>flows</em></h2>
+      <p class="section__sub reveal">
+        A clear, collaborative workflow from first idea to polished result.
+      </p>
+      <ol class="steps">
+        <li class="reveal"><span class="label">01</span><h3>Discovery</h3><p>Understand goals, audience, and what the project should achieve.</p></li>
+        <li class="reveal"><span class="label">02</span><h3>Strategy</h3><p>Define structure, content, and approach before touching visuals.</p></li>
+        <li class="reveal"><span class="label">03</span><h3>Direction</h3><p>Shape the visual language — layout, typography, and mood.</p></li>
+        <li class="reveal"><span class="label">04</span><h3>Design</h3><p>Craft the main screens and components with care for detail.</p></li>
+        <li class="reveal"><span class="label">05</span><h3>Development</h3><p>Turn designs into responsive, tested, fast-loading pages.</p></li>
+        <li class="reveal"><span class="label">06</span><h3>Delivery</h3><p>Launch, hand off cleanly, and support what ships.</p></li>
+      </ol>
+    </section>
+
+    <!-- ======= TESTIMONIALS ======= -->
+    <section class="section">
+      <p class="label reveal">Testimonials</p>
+      <h2 class="reveal">What people <em>say</em></h2>
+      <div class="cards-3 cards-3--two">
+        <!-- TODO: replace with real quotes (lecturer, internship supervisor, teammate) -->
+        <blockquote class="card reveal">
+          <p>"Imelda supported our operational team with patience and precision — issues got solved, and systems ran smoothly."</p>
+          <footer><strong>Internship supervisor</strong><span class="label">PT Smartfren Telecom</span></footer>
+        </blockquote>
+        <blockquote class="card reveal">
+          <p>"Reliable, curious, and great with students — her lab sessions made hard material approachable."</p>
+          <footer><strong>Lab coordinator</strong><span class="label">Telkom University</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section class="section section--cta card-surface" id="contact">
+      <h2 class="reveal">Let's work <em>together</em></h2>
+      <p class="section__sub reveal">
+        Have a question, a role, or want to chat about tech, AI &amp; design —
+        my inbox is open.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn" href="mailto:imeldadamayantik@gmail.com">imeldadamayantik@gmail.com</a>
+        <a class="btn btn--ghost" href="assets/CV_ImeldaDamayanti.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="label">© 2026 Imelda Damayanti</span>
+    <nav class="footer__links" aria-label="Social">
+      <a href="https://www.linkedin.com/in/imeldadamayanti/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/imeldamayanti" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/imelda_d_/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <a class="label" href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
