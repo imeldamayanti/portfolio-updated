@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link rel="stylesheet" href="css/style.css?v=23" />
 </head>
 <body>
 
@@ -29,19 +29,32 @@
     <nav class="nav__links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#services">Services</a>
       <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn" href="mailto:imeldadamayantik@gmail.com">Get in touch</a>
+    <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a class="btn mobile-menu__btn" href="mailto:imeldadamayantik@gmail.com">Get in touch</a>
+  </nav>
 
   <main id="home">
 
     <!-- ======= HERO ======= -->
     <section class="hero card-surface">
       <div class="hero__text">
-        <h1 class="reveal">Build Better<br /><em>Faster Smarter</em></h1>
+        <h1 class="reveal">I'm Imelda</h1>
+        <p class="hero__role reveal"><em>Developer &amp; AI Enthusiast</em></p>
         <p class="reveal">
           I build clean, functional websites and explore what AI can do for
           real people — a Computer Science student crafting web experiences
@@ -49,13 +62,8 @@
         </p>
         <div class="hero__actions reveal">
           <a class="btn" href="#projects">View projects</a>
-          <a class="btn btn--ghost" href="mailto:imeldadamayantik@gmail.com">Get in touch</a>
+          <a class="btn btn--ghost" href="assets/CV_ImeldaDamayanti.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
-        <ul class="hero__stats reveal">
-          <li><strong><span class="count" data-target="6">0</span>+</strong><span>Projects completed</span></li>
-          <li><strong><span class="count" data-target="2">0</span></strong><span>Internships</span></li>
-          <li><strong><span class="count" data-target="15">0</span>+</strong><span>Students mentored</span></li>
-        </ul>
       </div>
       <figure class="hero__photo reveal">
         <img src="assets/images/portrait.jpg" alt="Portrait of Imelda Damayanti"
@@ -114,29 +122,65 @@
         A curated collection of web, AI, and design work.
       </p>
       <div class="grid-2">
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#20301f" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><img src="assets/images/budgetinaja.jpg" alt="Budget-in Aja homepage" loading="lazy" /><span class="proj__title-hover">Budget-in Aja</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>Budget-in Aja</h3><span class="label">Website</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><img src="assets/images/budgetinaja.jpg" alt="Budget-in Aja homepage" loading="lazy" /><span class="proj__title-hover">Budget-in Aja</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>Budget-in Aja</h3><span class="label">Website</span></div>
+            <p class="proj__desc">A web app that helps students plan budget-friendly meals for the week.</p>
+            <ul class="proj__stack" aria-label="Tech stack">
+              <li>Golang</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+          </div>
         </article>
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#1c2a33" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><span>Waveline</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>Waveline</h3><span class="label">Website</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><img src="assets/images/waveline.jpg" alt="Waveline website" loading="lazy" /><span class="proj__title-hover">Waveline</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>Waveline</h3><span class="label">Website</span></div>
+            <p class="proj__desc">A clean, responsive website build with a modern front-end.</p>
+            <ul class="proj__stack" aria-label="Tags">
+              <li>Web</li><li>Front-End</li>
+            </ul>
+          </div>
         </article>
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#33251c" href="https://hands4math.streamlit.app/" target="_blank" rel="noopener"><span>Hands4Math</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>Hands4Math</h3><span class="label">Website · AI</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://hands4math.streamlit.app/" target="_blank" rel="noopener"><img src="assets/images/hands4math.jpg" alt="Hands4Math welcome screen" loading="lazy" /><span class="proj__title-hover">Hands4Math</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>Hands4Math</h3><span class="label">Website · AI</span></div>
+            <p class="proj__desc">Arithmetic calculator with gesture detection — solve math using ASL hand signs.</p>
+            <ul class="proj__stack" aria-label="Tags">
+              <li>AI</li><li>Computer Vision</li><li>Streamlit</li>
+            </ul>
+          </div>
         </article>
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#2b1c33" href="https://drive.google.com/file/d/1HwaXAAY8iuQWKKm7p7YE5BF4egB1NFR5/view?usp=sharing" target="_blank" rel="noopener"><span>Gemas</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>Gemas</h3><span class="label">UI Design</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://drive.google.com/file/d/1HwaXAAY8iuQWKKm7p7YE5BF4egB1NFR5/view?usp=sharing" target="_blank" rel="noopener"><img src="assets/images/gemas.jpg" alt="Gemas app UI design" loading="lazy" /><span class="proj__title-hover">Gemas</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>Gemas</h3><span class="label">UI Design</span></div>
+            <p class="proj__desc">Mobile app UI design — flows and visual system crafted in Figma.</p>
+            <ul class="proj__stack" aria-label="Tags">
+              <li>UI/UX</li><li>Figma</li>
+            </ul>
+          </div>
         </article>
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#33301c" href="https://www.instagram.com/p/C50JKsIyBN_/?img_index=2" target="_blank" rel="noopener"><span>U-Productive</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>U-Productive</h3><span class="label">UI Design</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://github.com/imeldamayanti" target="_blank" rel="noopener"><img src="assets/images/kida.jpg" alt="KIDA iOS app — scan, AR chat, and collection screens" loading="lazy" /><span class="proj__title-hover">KIDA</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>KIDA</h3><span class="label">iOS App</span></div>
+            <p class="proj__desc">Kids' AR app — scan everyday objects and they come alive to chat and teach. See it, know it, love it.</p>
+            <ul class="proj__stack" aria-label="Tags">
+              <li>iOS</li><li>Swift</li><li>AR</li>
+            </ul>
+          </div>
         </article>
-        <article class="proj reveal">
-          <a class="proj__media" style="--tint:#1c3327" href="https://drive.google.com/file/d/1pflWEJiDpWsCpqrIfa3rFi1os63ERT6Z/view?usp=sharing" target="_blank" rel="noopener"><span>Marketing &amp; Design</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
-          <div class="proj__meta"><h3>Marketing &amp; Design</h3><span class="label">Branding</span></div>
+        <article class="proj proj--card reveal">
+          <a class="proj__media" href="https://drive.google.com/file/d/1pflWEJiDpWsCpqrIfa3rFi1os63ERT6Z/view?usp=sharing" target="_blank" rel="noopener"><img src="assets/images/marketingdesign.jpg" alt="Marketing and design portfolio work" loading="lazy" /><span class="proj__title-hover">Marketing &amp; Design</span><span class="proj__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7" /><path d="M9 7h8v8" /></svg></span></a>
+          <div class="proj__body">
+            <div class="proj__meta"><h3>Marketing &amp; Design</h3><span class="label">Branding</span></div>
+            <p class="proj__desc">Brand and campaign design — social assets and visual direction.</p>
+            <ul class="proj__stack" aria-label="Tags">
+              <li>Branding</li><li>Social Media</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
@@ -154,6 +198,24 @@
       </div>
       <ol class="timeline">
         <div class="timeline__progress" aria-hidden="true"></div>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">⌘</span>
+          <div class="timeline__card">
+            <h3>Apple Developer Academy @Bali</h3>
+            <p class="timeline__role">Learner — iOS Development</p>
+            <p>Challenge-based program building real iOS apps with Swift — collaborating in cross-functional teams on design, code, and product thinking.</p>
+            <span class="label">2026</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__node" aria-hidden="true">▣</span>
+          <div class="timeline__card">
+            <h3>PT Surya TOTO Indonesia Tbk</h3>
+            <p class="timeline__role">Web Developer Intern</p>
+            <p>Built and maintained an internal HR web app serving 700+ employees — gathered requirements with HR and IT teams, fixed bugs, and optimized performance.</p>
+            <span class="label">2025</span>
+          </div>
+        </li>
         <li class="reveal">
           <span class="timeline__node" aria-hidden="true">◮</span>
           <div class="timeline__card">
@@ -179,15 +241,6 @@
             <p class="timeline__role">WordPress Developer</p>
             <p>Planned, created, and designed websites with WordPress and Figma; collaborated with design teams on scalable, reusable front-end templates.</p>
             <span class="label">SEP 2021 – JAN 2022</span>
-          </div>
-        </li>
-        <li class="reveal">
-          <span class="timeline__node" aria-hidden="true">❖</span>
-          <div class="timeline__card">
-            <h3>Telkom Vocational School</h3>
-            <p class="timeline__role">Software Engineering</p>
-            <p>Graduated 2nd parallel student; LSP Web Development certification; Head of the Regeneration Division.</p>
-            <span class="label">AUG 2022</span>
           </div>
         </li>
       </ol>
@@ -221,7 +274,7 @@
     </section>
 
     <!-- ======= PROCESS ======= -->
-    <section class="section">
+    <!-- <section class="section">
       <p class="label reveal">Process</p>
       <h2 class="reveal">How the work <em>flows</em></h2>
       <p class="section__sub reveal">
@@ -235,14 +288,14 @@
         <li class="reveal"><span class="label">05</span><h3>Development</h3><p>Turn designs into responsive, tested, fast-loading pages.</p></li>
         <li class="reveal"><span class="label">06</span><h3>Delivery</h3><p>Launch, hand off cleanly, and support what ships.</p></li>
       </ol>
-    </section>
+    </section> -->
 
     <!-- ======= TESTIMONIALS ======= -->
-    <section class="section">
+    <!-- <section class="section">
       <p class="label reveal">Testimonials</p>
       <h2 class="reveal">What people <em>say</em></h2>
       <div class="cards-3 cards-3--two">
-        <!-- TODO: replace with real quotes (lecturer, internship supervisor, teammate) -->
+
         <blockquote class="card reveal">
           <p>"Imelda supported our operational team with patience and precision — issues got solved, and systems ran smoothly."</p>
           <footer><strong>Internship supervisor</strong><span class="label">PT Smartfren Telecom</span></footer>
@@ -252,7 +305,7 @@
           <footer><strong>Lab coordinator</strong><span class="label">Telkom University</span></footer>
         </blockquote>
       </div>
-    </section>
+    </section> -->
 
     <!-- ======= CONTACT ======= -->
     <section class="section section--cta card-surface" id="contact">
@@ -279,6 +332,6 @@
     <a class="label" href="#home">Back to top ↑</a>
   </footer>
 
-  <script src="js/main.js?v=4"></script>
+  <script src="js/main.js?v=22"></script>
 </body>
 </html>

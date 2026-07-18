@@ -31,6 +31,42 @@ if (yParam) {
   );
 }
 
+/* ============ NAV: shrink to floating pill on scroll ============ */
+(function navPill() {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  let ticking = false;
+  function update() {
+    nav.classList.toggle("nav--pill", scrollY > 120);
+  }
+  addEventListener(
+    "scroll",
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { update(); ticking = false; });
+    },
+    { passive: true }
+  );
+  update();
+})();
+
+/* ============ MOBILE MENU ============ */
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
+if (burger && mobileMenu) {
+  burger.addEventListener("click", () => {
+    const open = mobileMenu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open);
+  });
+  mobileMenu.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    })
+  );
+}
+
 /* ============ SCROLL REVEALS ============ */
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -51,7 +87,7 @@ document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el))
   const tl = document.querySelector(".timeline");
   if (!tl || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const progress = tl.querySelector(".timeline__progress");
-  const items = [...tl.querySelectorAll("li")];
+  const items = [...tl.querySelectorAll(":scope > li")]; // timeline entries only, not bullet lists inside cards
 
   function update() {
     const r = tl.getBoundingClientRect();
@@ -79,23 +115,3 @@ document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el))
   update();
 })();
 
-/* ============ COUNT-UP STATS ============ */
-const countObserver = new IntersectionObserver(
-  (entries) => {
-    for (const e of entries) {
-      if (!e.isIntersecting) continue;
-      countObserver.unobserve(e.target);
-      const el = e.target;
-      const target = +el.dataset.target;
-      const t0 = performance.now();
-      const dur = 1400;
-      (function step(now) {
-        const p = Math.min((now - t0) / dur, 1);
-        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
-        if (p < 1) requestAnimationFrame(step);
-      })(t0);
-    }
-  },
-  { threshold: 0.6 }
-);
-document.querySelectorAll(".count").forEach((el) => countObserver.observe(el));
